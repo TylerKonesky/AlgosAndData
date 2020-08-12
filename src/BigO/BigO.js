@@ -47,3 +47,29 @@ console.log(t1-t2)
 
 
 //SPACE COMPLEXITY (the amount of memory that is taken up)
+
+// **********OBJECTS**********
+// Objects work well when you don't need order.
+// And when you need fast access / insertion or removal.
+// Objects = 
+// Insertion = O(1)
+// Search = O(n)
+// Access = O(1)
+// hasOwnProperty = O(1)
+// most methods = O(n)
+// NO ORDER - BASIC 
+
+// **********ARRAYS**********
+
+
+// Use them when you need order
+// Use them when you need fast access / insertion / removal
+// Insertion: adding to the end = O(1) -- adding to the beginning = O(n)
+// Removal: removing from the end = O(1) -- removing from the beginning = O(n)
+// push and pop are usually more efficient than adding to the beginning.
+// accessing = O(1)
+// searching = O(n)
+// Array Methods -- -- -- 
+// unshift, concat, shift, slice, splice, forEach, map, filter, reduce etc. = O(n)
+// push, pop = O(1)
+// sort = O(n * logn)
