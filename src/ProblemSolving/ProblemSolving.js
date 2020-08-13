@@ -29,3 +29,34 @@
 //         - Can you improve the performance of your solution?
 //         - Can you think of other ways to refactor?
 //         - How have other people solved this problem?
+
+//****Frequency Counters!! ********* */
+// Usually O(n *squared)
+
+
+//***** Multiple Pointers Pattern */
+//This pattern starts and the front and the back of the array and moves the indicies left or right
+// this chances the Big O from O(n^2) to O(n)
+
+function sumZero(arr){
+    let left = 0;
+    let right = arr.length -1;
+    while(left < right){
+        let sum = arr[left] + arr[right];
+        if(sum === 0){
+            return [arr[left] + arr[right]];
+        }else if(sum > 0){
+            right--;
+        }else{
+            left++
+        }
+    }
+}
+
+//***** Sliding Window Pattern ***** */
+
+// *****Divide and Conquer****** //
+// This patter can tremendously decrease time complexity
+// Works for sorted arrays... think like starting in the middle... is what I am looking for above or below that... go to the next middle... etc. 
+
+
