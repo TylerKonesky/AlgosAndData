@@ -138,5 +138,65 @@ function flatten(oldArr){
     return newArr;
   }
 
+// Capitalize First letters:
+
+function capitalizeFirst (array) {
+  if (array.length === 1) {
+    return [array[0][0].toUpperCase() + array[0].substr(1)];
+  }
+  const res = capitalizeFirst(array.slice(0, -1));
+  const string = array.slice(array.length - 1)[0][0].toUpperCase() + array.slice(array.length-1)[0].substr(1);
+  res.push(string);
+  return res;
+}
+
+// Sum of even numbers in object with possible nested objects
+
+function nestedEvenSum (obj, sum=0) {
+    for(let key in obj){
+        if(typeof obj[key] === "object"){
+            sum += nestedEvenSum(obj[key])
+        }else{
+            if(typeof obj[key] === 'number' && obj[key] % 2 === 0){
+                sum += obj[key]
+            }
+        }
+    }
+    return sum
+}
+
+// convert all numbers in nested objects to Numbers from Strings
+function stringifyNumbers(obj) {
+    var newObj = {};
+    for (var key in obj) {
+      if (typeof obj[key] === 'number') {
+        newObj[key] = obj[key].toString();
+      } else if (typeof obj[key] === 'object' && !Array.isArray(obj[key])) {
+        newObj[key] = stringifyNumbers(obj[key]);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+    return newObj;
+  }
+
+  // return a collection of strings from nested objects
+
+  function collectStrings(obj){
+    let newArr = [];
+    for(let key in obj){
+        if(typeof obj[key] === 'string'){
+            newArr.push(obj[key]);
+        }else{
+            if(typeof obj[key] === 'object'){
+                newArr.push(...collectStrings(obj[key]));
+            }
+        }
+    }
+    return newArr;
+}
+
+  
+
 
 
