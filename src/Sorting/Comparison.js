@@ -5,3 +5,4 @@
 // Bubble               0(n)                    0(n^2)                  0(n^2)                      O(1)
 // Insertion            0(n)                    0(n^2)                  0(n^2)                      O(1)
 // Selection            0(n^2)                  0(n^2)                  0(n^2)                      O(1)
+// MergeSort            0(n log n)              0(n log n)              0(n log n)                  O(n)
