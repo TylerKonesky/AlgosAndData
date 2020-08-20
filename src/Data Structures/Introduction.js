@@ -38,6 +38,11 @@ class Student {
         })
         return sum / this.scores.length;
     }
+
+    static entrollStudents(...students){
+        //Do something with each of these students...
+        return "ENROLLING STUDENTS"
+    }
 }
 
 // The method to create new objects must be called a constructor.
@@ -57,4 +62,8 @@ secondStudent.addScore('English', 88); // Updates scores...
 secondStudent.addScore('Math', 90); // Updates scores...
 
 secondStudent.averageScores(); // returns 89
+
+//Class methods = "Static"... Not terrible common. Cannot be used on individual class instantiations 
+
+Student.entrollStudents();
 
