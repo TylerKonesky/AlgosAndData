@@ -1,0 +1,2 @@
+//                              Insertion       Removal         Searching           Access                        
+// SIngly Linked Lists            O(1)         O(1) or O(n)       O(n)               O(N)
