@@ -1,2 +1,3 @@
 //                              Insertion       Removal         Searching           Access                        
-// SIngly Linked Lists            O(1)         O(1) or O(n)       O(n)               O(N)
+// Singly Linked Lists            O(1)         O(1) or O(n)       O(n)               O(n)
+// Doubly Linked Lists            O(1)            O(1)            O(n)               O(n/2) or O(n)
